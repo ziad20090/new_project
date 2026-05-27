@@ -22,7 +22,7 @@ body {
 /*Start body code*/
 
 .header {
-  background-image: url('../images/test.jpg');
+  background-image: url('.../images/test.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat
