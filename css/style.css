@@ -39,7 +39,7 @@ body {
   flex-direction: column;
 }
 
-.content i {
+.content > i {
   color: #2CBCA1;
   border: 4px solid #2CBCA1;
   width: 50px;
@@ -50,10 +50,12 @@ body {
   border-radius: 50%;
   font-size: 35px;
   margin-bottom: 20px;
+  animation: top 2s ;
 }
 
 .content .text {
   text-align: center;
+  animation: opacity 2s;
 } 
 
 .content .text h2 {
@@ -86,24 +88,29 @@ body {
   font-weight: bold;
 }
 
-.content .header_buttons a::after {
-  content: "\f25a";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 400;
-    margin-left: 8px;
-    display: inline-block;
-    vertical-align: middle;
+.content .header_buttons a i {
+  display: none;
   position: absolute;
-  color: black;
+  color: #111111;
+}
+
+.content .header_buttons a:hover i {
+  display: block;
   bottom: -5px;
-  transform: rotate(-35deg);
+  right: 5px;
+  transform: rotate(-20deg);
+  transition: 0.5s;
+  z-index: 9999;
 }
 
 .content .header_buttons a:first-child {
   background-color: #2CBCA1;
+  animation: left 2s;
 }
 
-.content .header_buttons a:last-child {}
+.content .header_buttons a:last-child {
+  animation: right 2s;
+}
 
 .content .header_buttons a:hover {
   background-color: transparent;
@@ -117,6 +124,54 @@ body {
 .content .header_buttons a:last-child:hover {
   border: 1px solid red;
 }
+
 /*End body code*/
 
 
+@keyframes down {
+  0% {
+    transform: translateY(200px);
+  }
+  100% {
+    
+  }
+}
+
+@keyframes top {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
