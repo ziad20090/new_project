@@ -22,7 +22,7 @@ body {
 /*Start body code*/
 
 .header {
-  background-image: url('/images/bg-header-desktop.png');
+  background-image: url('/images/test.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat
@@ -33,11 +33,12 @@ body {
   align-items: center;
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .header {
     background-image: url('/images/bg-header-mobile.png');
   }
 }
+*/
 
 .content {
   display: flex;
@@ -69,11 +70,12 @@ body {
 .content .text h2 {
   margin-bottom: 10px;
   font-weight: 600;
+  color: white;
 }
 
 .content .text p {
   font-size: 12px;
-  color: #666666c5;
+  color: #ffffffc5;
 }
 
 .content .header_buttons {
