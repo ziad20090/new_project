@@ -19,7 +19,7 @@ body {
 
 /*End basic code*/
 
-/*Start body code*/
+/*Start header code*/
 
 .header {
   background-image: url('../images/bg-header-desktop.png');
@@ -59,7 +59,8 @@ body {
   border-radius: 50%;
   font-size: 130px;
   margin-bottom: 40px;
-  animation: top 2s;
+  animation: top 2s, move 1s 2s Infinite alternate linear ;
+  position: relative;
 }
 
 .content .text {
@@ -158,9 +159,17 @@ body {
 }
 
 
-/*End body code*/
+/*End header code*/
+
+
 
 /*Start Animation*/
+
+@keyframes move {
+  100% {
+    transform: translateY(-50px);
+  }
+}
 
 @keyframes down {
   0% {
