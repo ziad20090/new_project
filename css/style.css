@@ -22,7 +22,7 @@ body {
 /*Start body code*/
 
 .header {
-  background-image: url('.../images/bg-header-desktop.png');
+  background-image: url('../images/bg-header-desktop.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat
@@ -35,7 +35,7 @@ body {
 
 @media (max-width: 768px) {
   .header {
-    background-image: url('.../images/bg-header-mobile.png');
+    background-image: url('../images/bg-header-mobile.png');
   }
 }
 
