@@ -47,7 +47,7 @@ body {
   flex-direction: column;
 }
 
-.content > .icon {
+.content .icon {
   font-family: Trebuchet MS;
   color: #2CBCA1;
   border: 8px solid #2CBCA1;
@@ -59,8 +59,7 @@ body {
   border-radius: 50%;
   font-size: 130px;
   margin-bottom: 40px;
-  animation: top 2s, move 1s 2s Infinite alternate linear ;
-  position: relative;
+  animation: top 2s, move 1s 2s Infinite alternate linear;
 }
 
 .content .text {
